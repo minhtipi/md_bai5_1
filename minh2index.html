@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="ket_qua"></h1>
+<label>diem toan</label>
+<input type="number" id="toan">
+<label>diem ly</label>
+<input type="number" id="ly">
+<label>diem hoa</label>
+<input type="number" id="hoa">
+<button id="nut_bam" onclick="showKQ()">ket_qua</button>
+<script>
+  function showKQ(){
+    let toan=+document.getElementById('toan').value
+    let ly=+document.getElementById('ly').value
+    let hoa=+document.getElementById('hoa').value
+    let avg=(toan+ly+hoa)/3
+    document.getElementById('ket_qua').innerHTML=('diem_trung_binh ')+avg;
+  }
+</script>
+</body>
+</html>
